@@ -25,12 +25,12 @@ if err != nil {
 To this:
 ```Go
 v1, err := f1()
-noerr.NoErr(err) //This also returns a bool if you want to nest ifs
+noerr.Log(err) //This also returns a bool if you want to nest ifs
 
 v2, err := f2()
-noerr.NoErrF(err)
+noerr.Fatal(err)
 
 v3, err := f3()
-noerr.NoErrP(err)
+noerr.Panic(err)
 
 ```
